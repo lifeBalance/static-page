@@ -1,0 +1,24 @@
+nav.navbar-inverse
+  .container-fluid
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+        span(class="sr-only") Toggle navigation
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      
+      a.navbar-brand(href="#")
+        img(src="images/bw7_logo_white.png" width='35')
+
+    // Collect the nav links, forms, and other content for toggling 
+    .navbar-collapse(class="collapse" id="bs-example-navbar-collapse-1")
+      ul(class="nav navbar-nav")
+        li: a.text-uppercase predict
+        li: a.text-uppercase manage
+        li: a.text-uppercase evaluate
+    
+      .navbar-right
+        small.navbar-text.text-center.client Client name
+          br
+          span: a.account Account Settings

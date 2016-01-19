@@ -1,0 +1,57 @@
+.campaigns
+  .row
+    .col-md-12
+      p Campaigns
+  .row
+    .col-md-12
+      button(type="button" class="btn btn-sm btn-primary biggie") CREATE NEW
+      .btn-group.pull-right.switches
+        button(type="button" class="btn btn-sm btn-primary") List
+        button(type="button" class="btn btn-sm btn-primary active") Timeline
+  .row
+    .col-md-12
+      table(class="table table-striped campaigns-table")
+        thead
+          tr
+            th Campaign name #[span(class="triangle pull-right")]
+            th Status #[span(class="triangle pull-right")]
+            th Marketing goal #[span(class="triangle pull-right")]
+            th Tags #[span(class="triangle pull-right")]
+            th Date #[span(class="triangle pull-right")]
+        tbody
+          tr
+            td Campaign 27
+            td: #[span(class="circle orange")] Prediction
+            td Raise awareness
+            td Brand: BW7
+            td 01/02/12-31/01/16
+          tr
+            td Campaign 3
+            td: #[span(class="circle orange")] Prediction
+            td Gain new subscribers
+            td Product: Newsletter
+            td 01/02/12-31/01/16
+          tr
+            td Campaign 9
+            td: #[span(class="circle green")] Product: Newsletter
+            td Raise awareness
+            td Raise sales
+            td 01/02/12-31/01/16
+          tr
+            td Campaign 27
+            td: #[span(class="circle green")] Prediction
+            td Raise awareness
+            td Brand: BW7
+            td 01/02/12-31/01/16
+          tr
+            td Campaign 3
+            td: #[span(class="circle green")] Prediction
+            td Gain new subscribers
+            td Product: Newsletter
+            td 01/02/12-31/01/16
+          tr
+            td Campaign 9
+            td: #[span(class="circle blue")] Product: Newsletter
+            td Raise awareness
+            td Raise sales
+            td 01/02/12-31/01/16

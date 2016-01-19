@@ -1,0 +1,187 @@
+@import 'bootstrap';
+
+// Color Variables
+$white-bg: #f9f9f9;
+$white: #fff;
+$black: #000;
+$orange: #F8521B;
+$green: #019344;
+$blue: #0084FF;
+$body: #4D4C4C;
+
+$button: #00B1EE;
+$button-shadow: #4A91B3;
+$thead: #E9E9E9;
+$tbody: #FCFCFC;
+$triangle: #D1D1D1;
+
+// Fonts
+@font-face {
+    font-family: LabGrotesqueWeb;
+    src: url('../fonts/LabGrotesqueWeb/LabGrotesqueWeb-Light.woff');
+}
+
+/********************
+    Generic stuff
+*********************/
+body {
+  background-color: $white-bg;
+  font-family: LabGrotesqueWeb;
+  color: $body;
+}
+
+// Buttons
+button.biggie {
+  background-color: $button;
+  box-shadow: 2px 2px 0 1px $button-shadow;
+  border: transparent;
+  padding: 2px 20px;
+  border-radius: 2px;
+}
+
+.switches > button {
+  padding: 2px 20px;
+  border-radius: 2px;
+  background-color: $blue;
+  background: linear-gradient(to bottom,  $button 0%, $button-shadow 100%);
+  border: transparent;
+}
+
+.switches > button.active {
+  background: linear-gradient(to bottom,  $button 0%, $button-shadow 100%);
+  color: $thead;
+  background-image: radial-gradient($button, $button-shadow);
+}
+
+/********************
+    Navigation bar
+*********************/
+small.navbar-text.text-center.client {
+  margin: 5px;
+  color: $white;
+}
+
+// Fixing color of the links
+.navbar-inverse .navbar-nav > li > a {
+  color: $white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: $black;
+}
+
+// Padding around the branding
+.navbar-brand {
+  padding: 10px 10px 15px;
+}
+
+// Account settings link smaller
+a.account {
+  font-size: .8em;
+}
+
+
+/********************
+      Campaigns
+*********************/
+.campaigns {
+  padding-top: 4em;
+}
+
+// Inverted Triangles
+.triangle:after {
+  content: "\e252";
+  font-family: "Glyphicons Halflings";
+  color: $triangle;
+}
+
+// Campaign Markers
+.circle:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  font-size: .8em;
+  padding-right: 2em;
+}
+
+.orange {
+  @extend .circle;
+  color: $orange;
+}
+
+.green {
+  @extend .circle;
+  color: $green;
+}
+
+.blue {
+  @extend .circle;
+  color: $blue;
+}
+
+// Campaigns Table
+table.table.campaigns-table {
+  font-size: .75em;
+  margin: 4em 0;
+}
+
+.campaigns-table > thead {
+  background-color: $thead;
+}
+
+table.campaigns-table > tbody > tr:nth-of-type(odd) {
+  background-color: $tbody;
+}
+
+/********************
+  Creative materials
+*********************/
+.creative-materials {
+  padding-bottom: 6em;
+}
+
+// Checkboxes
+.checkboxes {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.all {
+  float: left;
+  padding-right: 1em;
+  border-right: solid black 1px;
+}
+.all label {
+  padding-left: 0;
+}
+
+// Thumbnails
+.thumbnail {
+  margin-right: 1em;
+}
+
+// .placeholder {
+//   width: 150px;
+//   height: 100px;
+// }
+
+// .image1 {
+//   background-image: url('../images/Material1.png');
+//   background-size: cover;
+//   background-position: top;
+// }
+
+// .image2 {
+//   background-image: url('../images/Material2.png');
+//   background-size: cover;
+// }
+
+// .image3 {
+//   background-image: url('../images/Material3.png');
+//   background-size: cover;
+// }
+
+// .image4 {
+//   background-image: url('../images/Material4.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
